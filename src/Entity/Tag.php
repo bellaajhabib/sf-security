@@ -28,7 +28,7 @@ class Tag
     private $name;
 
     /**
-     * @ORM\Column(type="string", length=191, unique=true)
+     * @ORM\Column(type="string", length=125, unique=true)
      * @Gedmo\Slug(fields={"name"})
      */
     private $slug;
