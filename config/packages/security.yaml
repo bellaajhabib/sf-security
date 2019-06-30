@@ -15,6 +15,11 @@ security:
             guard:
                 authenticators:
                 - App\Security\LoginFormAuthenticator
+            logout:
+                path: app_logout
+
+            remember_me:
+                secret: '%kernel.secret%'
             # activate different ways to authenticate
 
             # http_basic: true
